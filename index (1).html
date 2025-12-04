@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memphis Plumbing Services - 24/7 Emergency</title>
+    <meta name="description" content="Professional plumbing services in Memphis. 24/7 emergency response, licensed & insured.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="plumbingTemplate">
+        
+        <!-- HEADER -->
+        <header class="header">
+            <div class="headerContainer">
+                <div class="headerLogo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20m-7-7h14M5 9h14"></path>
+                    </svg>
+                    <span class="headerLogoText">ProPlumbing</span>
+                </div>
+                
+                <nav class="headerNav">
+                    <a href="#services" class="headerNavLink">Services</a>
+                    <a href="#about" class="headerNavLink">About</a>
+                    <a href="#team" class="headerNavLink">Team</a>
+                    <a href="#contact" class="headerNavLink">Contact</a>
+                </nav>
+
+                <div class="headerActions">
+                    <a href="tel:+19015551234" class="headerPhone">
+                        (901) 555-1234
+                    </a>
+                    <button class="btn btnPrimary" onclick="scrollToContact()">Get Quote</button>
+                </div>
+
+                <button class="headerMobileToggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section style="padding-top: 120px; padding-bottom: 80px; background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);">
+            <div class="container">
+                <div style="max-width: 700px;">
+                    <div class="heroBadgesWrapper">
+                        <div class="heroBadge">
+                            ⭐ Trusted by 1000+ homes
+                        </div>
+                        <div class="heroBadgeRating">
+                            <span class="ratingNumber">4.9</span>
+                            <div class="ratingStars">★★★★★</div>
+                            <span class="ratingCount">(248 reviews)</span>
+                        </div>
+                    </div>
+
+                    <h1 style="font-size: 3.5rem; font-weight: 700; margin: 2rem 0 1rem 0; line-height: 1.1; font-family: 'Work Sans', sans-serif;">
+                        <span class="heroTitleLine1">Professional</span>
+                        <span class="heroTitleLine2" style="display: block; color: #2563eb;">Plumbing Services</span>
+                    </h1>
+
+                    <p style="font-size: 1.125rem; color: #666; margin-bottom: 2rem; line-height: 1.6;">
+                        24/7 emergency plumbing for Memphis. Fast response, fair prices, licensed & insured.
+                    </p>
+
+                    <div class="heroCta">
+                        <a href="tel:+19015551234" class="btn btnPrimary btnLarge">Call Now: (901) 555-1234</a>
+                        <button class="btn btnSecondary btnLarge" onclick="scrollToContact()">Schedule Online</button>
+                    </div>
+
+                    <div class="heroStats">
+                        <div class="heroStatsCard">
+                            <div class="heroStatsIcon" style="font-size: 1.75rem;">⚡</div>
+                            <div class="heroStatsContent">
+                                <div class="heroStatsNumber">30 min</div>
+                                <div class="heroStatsLabel">Average Response</div>
+                            </div>
+                        </div>
+                        <div class="heroStatsCard">
+                            <div class="heroStatsIcon" style="font-size: 1.75rem;">✓</div>
+                            <div class="heroStatsContent">
+                                <div class="heroStatsNumber">100%</div>
+                                <div class="heroStatsLabel">Satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; font-family: 'Work Sans', sans-serif; font-weight: 700;">Our Services</h2>
+                <div class="servicesGrid">
+                    <div class="serviceCard">
+                        <div class="serviceCardIcon" style="font-size: 2.5rem;">🚿</div>
+                        <h3 class="serviceCardTitle">Drain Cleaning</h3>
+                        <p class="serviceCardDescription">Fast and effective drain cleaning services</p>
+                        <ul class="serviceCardFeatures">
+                            <li>✓ Professional equipment</li>
+                            <li>✓ Same-day service</li>
+                            <li>✓ Guaranteed results</li>
+                        </ul>
+                    </div>
+
+                    <div class="serviceCard">
+                        <div class="serviceCardIcon" style="font-size: 2.5rem;">🔧</div>
+                        <h3 class="serviceCardTitle">Repairs</h3>
+                        <p class="serviceCardDescription">All plumbing repairs handled quickly</p>
+                        <ul class="serviceCardFeatures">
+                            <li>✓ Expert technicians</li>
+                            <li>✓ Quality parts</li>
+                            <li>✓ Warranty included</li>
+                        </ul>
+                    </div>
+
+                    <div class="serviceCard">
+                        <div class="serviceCardIcon" style="font-size: 2.5rem;">💧</div>
+                        <h3 class="serviceCardTitle">Leak Detection</h3>
+                        <p class="serviceCardDescription">Find and fix leaks before they damage</p>
+                        <ul class="serviceCardFeatures">
+                            <li>✓ Advanced technology</li>
+                            <li>✓ Non-invasive</li>
+                            <li>✓ Accurate detection</li>
+                        </ul>
+                    </div>
+
+                    <div class="serviceCard">
+                        <div class="serviceCardIcon" style="font-size: 2.5rem;">🚨</div>
+                        <h3 class="serviceCardTitle">Emergency</h3>
+                        <p class="serviceCardDescription">24/7 emergency plumbing response</p>
+                        <ul class="serviceCardFeatures">
+                            <li>✓ Always available</li>
+                            <li>✓ Fast dispatch</li>
+                            <li>✓ Fair pricing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EMERGENCY BANNER -->
+        <section class="emergencyBanner">
+            <div class="container">
+                <div class="emergencyBannerContent">
+                    <div class="emergencyBannerIcon" style="font-size: 2rem;">🚨</div>
+                    <div class="emergencyBannerText">
+                        <h3>Emergency Plumbing?</h3>
+                        <p>We're available 24/7. Call now for immediate assistance.</p>
+                    </div>
+                    <a href="tel:+19015551234" class="btn btnPrimary btnLarge" style="background: white; color: #2563eb; white-space: nowrap;">Call (901) 555-1234</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footerMain">
+                    <div class="footerColumnForm">
+                        <h3 class="footerContactTitle">Get in Touch</h3>
+                        <p class="footerContactDescription">Ready to solve your plumbing problems? Contact us today.</p>
+                        <form class="contactForm" id="contactForm">
+                            <div class="formGroup">
+                                <label class="formLabel">Your Name</label>
+                                <input type="text" class="formInput" placeholder="John Doe" required>
+                            </div>
+                            <div class="formGroup">
+                                <label class="formLabel">Phone</label>
+                                <input type="tel" class="formInput" placeholder="(901) 555-1234" required>
+                            </div>
+                            <div class="formGroup">
+                                <label class="formLabel">Message</label>
+                                <textarea class="formTextarea" placeholder="Tell us about your plumbing issue" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btnPrimary btnFullWidth btnLarge">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="footerColumnRight">
+                        <div class="footerContactSection">
+                            <h3 class="footerHeading">Contact Info</h3>
+                            <ul class="footerContact">
+                                <li>📞 <a href="tel:+19015551234">(901) 555-1234</a></li>
+                                <li>📧 <a href="mailto:info@proplumbing.com">info@proplumbing.com</a></li>
+                                <li>📍 Memphis, TN 38104</li>
+                                <li>🕐 24/7 Available</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footerBottom">
+                    <p>&copy; 2024 ProPlumbing Memphis. All rights reserved.</p>
+                    <div class="footerBottomLinks">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.getElementById('mobileToggle');
+        const header = document.querySelector('.header');
+        
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                header.classList.toggle('mobileMenuOpen');
+            });
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('headerScrolled');
+            } else {
+                header.classList.remove('headerScrolled');
+            }
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will contact you soon.');
+            e.target.reset();
+        });
+
+        // Scroll to contact
+        function scrollToContact() {
+            document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.headerNavLink').forEach(link => {
+            link.addEventListener('click', () => {
+                header.classList.remove('mobileMenuOpen');
+            });
+        });
+    </script>
+</body>
+</html>
